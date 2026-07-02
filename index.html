@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#dff2ff">
+  <meta name="description" content="张译尹（Aria）的新媒体、摄影、视觉设计、数据新闻与 AI 共创作品集。">
+  <meta name="keywords" content="张译尹,Aria,新媒体运营,摄影作品集,视觉设计,数据新闻,AI创作">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="张译尹 Aria｜内容、影像与 AI 共创">
+  <meta property="og:description" content="新媒体内容、摄影、视觉设计、数据新闻与 AI 共创作品集。">
+  <meta property="og:image" content="assets/images/hero-wave.webp">
+  <title>张译尹 Aria｜内容、影像与 AI 共创</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "张译尹",
+    "alternateName": "Aria",
+    "jobTitle": "新媒体内容创作者",
+    "email": "mailto:1722286746@qq.com",
+    "knowsAbout": ["新媒体运营", "内容策划", "摄影", "视觉设计", "数据分析", "AI辅助创作"]
+  }
+  </script>
+</head>
+<body>
+  <canvas class="webgl-canvas" id="webglCanvas" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="回到顶部">
+      <span class="brand-mark">Z</span>
+      <span>ARIA / 张译尹</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#projects">项目</a>
+      <a href="#spatial">空间</a>
+      <a href="#gallery">影像</a>
+      <a href="#experience">经历</a>
+      <a class="nav-contact" href="#contact">一起聊聊 ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad">
+      <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO WORK · CHENGDU / SHENZHEN / GUANGZHOU / SHANGHAI</p>
+        <h1>让内容有<br><em>温度</em>，让创意<br>真正<em>发生。</em></h1>
+        <p class="hero-lead">我是 <button class="name-trigger" id="nameTrigger" type="button" aria-controls="selfIntro" aria-expanded="false">张译尹（Aria）</button>，一名连接内容策略、影像表达与 AI 共创的新媒体创作者。既能捕捉生活里的光，也能把想法落成可传播、可执行的作品。</p>
+        <div class="self-intro" id="selfIntro" aria-hidden="true">
+          <span>ABOUT ME / 自我介绍</span>
+          <p>我做事认真，比较讲效率，能适应快节奏和多任务的工作环境。</p>
+        </div>
+        <p class="name-hint">点击名字，让我向你多介绍一点自己 ↗</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">探索作品 <span>↓</span></a>
+          <button class="button button-light js-open-resume" type="button">查看简历</button>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="代表作品拼贴">
+        <div class="hero-scribble" aria-hidden="true">ideas<br>into form</div>
+        <button class="hero-photo hero-photo-main js-lightbox" type="button" data-src="assets/images/hero-wave.webp" data-title="潮汐之上" data-caption="城市与自然 · 摄影">
+          <img src="assets/images/hero-wave.webp" alt="海浪拍打礁石的摄影作品">
+        </button>
+        <button class="hero-photo hero-photo-small js-lightbox" type="button" data-src="assets/images/hero-city.webp" data-title="晚霞落城" data-caption="城市观察 · 摄影">
+          <img src="assets/images/hero-city.webp" alt="晚霞中的城市摄影作品">
+        </button>
+        <button class="hero-photo hero-photo-tiny js-lightbox" type="button" data-src="assets/images/hero-jewelry.webp" data-title="银色关系" data-caption="产品与静物 · 摄影">
+          <img src="assets/images/hero-jewelry.webp" alt="银色首饰产品摄影作品">
+        </button>
+        <span class="hero-stamp">ARIA<br><small>VISUAL STORYTELLER</small></span>
+      </div>
+
+      <div class="hero-index" aria-hidden="true">
+        <span>01</span><span>PORTFOLIO · 2026</span><span>SCROLL TO EXPLORE</span>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="能力关键词">
+      <div>CONTENT STRATEGY ✦ PHOTOGRAPHY ✦ VISUAL DESIGN ✦ DATA STORY ✦ AI CO-CREATION ✦</div>
+      <div aria-hidden="true">CONTENT STRATEGY ✦ PHOTOGRAPHY ✦ VISUAL DESIGN ✦ DATA STORY ✦ AI CO-CREATION ✦</div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="section-label reveal"><span>02</span> ABOUT ME</div>
+      <div class="about-grid">
+        <div class="about-heading reveal">
+          <h2>不只“会做内容”，<br>更在意内容为什么<br><i>值得被看见。</i></h2>
+        </div>
+        <div class="about-copy reveal">
+          <p class="big-copy">本科就读网络与新媒体。零售一线让我理解用户，校园媒体训练了现场执行，摄影与视觉设计则让我持续练习如何把感受变成表达。</p>
+          <p>我适应快节奏和多任务，也享受从模糊想法中找到清晰结构：拆解目标、搜集素材、组织信息、制作视觉，最终交付一个能真正与人发生联系的内容成品。</p>
+          <div class="metric-row">
+            <div><b>31</b><span>校级拍摄任务</span></div>
+            <div><b>98%</b><span>年度工作完成率</span></div>
+            <div><b>MVP</b><span>IFS 门店荣誉</span></div>
+          </div>
+        </div>
+      </div>
+
+      <article class="ai-card reveal" id="ai-card">
+        <div class="ai-orbit" aria-hidden="true">
+          <span class="orbit orbit-1"></span><span class="orbit orbit-2"></span><span class="orbit orbit-3"></span>
+          <strong>AI</strong>
+        </div>
+        <div class="ai-copy">
+          <p class="mini-label">MY AI CREATOR CARD</p>
+          <h3>AI 是放大创意的合作者，<br>判断与审美仍然由我完成。</h3>
+          <p>用 ChatGPT / Claude 辅助资料研究、信息提炼、文案迭代与网页实现；用 Prompt 拆解视觉方向，再通过人工筛选、编辑与设计让结果回到真实传播目标。</p>
+          <div class="ai-tags"><span>Prompt framing</span><span>Research</span><span>Copy synthesis</span><span>Rapid prototyping</span></div>
+          <button class="text-button js-ai-toggle" type="button" aria-expanded="false">展开我的共创方法 <span>＋</span></button>
+          <div class="ai-method" aria-hidden="true">
+            <ol>
+              <li><b>01 / 定义问题</b><span>明确受众、情境与传播目标。</span></li>
+              <li><b>02 / 人机发散</b><span>快速生成角度、结构与视觉可能。</span></li>
+              <li><b>03 / 人工收束</b><span>验证事实、筛选方案、统一语气。</span></li>
+              <li><b>04 / 落地复盘</b><span>完成设计与交付，依据反馈继续迭代。</span></li>
+            </ol>
+          </div>
+        </div>
+        <button class="ai-work js-lightbox" type="button" data-src="assets/images/ai-coconut.webp" data-title="椰子幻想" data-caption="AI 概念实验 · 从日常物件出发的超现实视觉">
+          <img src="assets/images/ai-coconut.webp" alt="椰子与海浪构成的超现实 AI 概念作品">
+          <span>AI CONCEPT / 01 ↗</span>
+        </button>
+      </article>
+    </section>
+
+    <section class="projects section-pad" id="projects">
+      <div class="section-label reveal"><span>03</span> SELECTED PROJECTS</div>
+      <div class="projects-intro reveal">
+        <h2>从一张图，到一套<br><i>完整的表达。</i></h2>
+        <p>内容策划、数据叙事、网页设计与公共议题——这里不只陈列结果，也呈现我如何把信息组织成体验。</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project project-wide reveal">
+          <div class="project-media project-data-pair" aria-label="养老理财主题数据新闻长图，上下两篇">
+            <button class="js-lightbox" type="button" data-long="true" data-src="assets/images/data-story-part-1.webp" data-title="养老自救通关秘籍 · 上篇" data-caption="数据新闻 · 信息可视化 · 团队项目">
+              <img src="assets/images/data-story-part-1.webp" alt="养老理财主题数据新闻长图上篇">
+              <span class="data-part">PART 01</span>
+            </button>
+            <button class="js-lightbox" type="button" data-long="true" data-src="assets/images/data-story-part-2.webp" data-title="养老自救通关秘籍 · 下篇" data-caption="数据新闻 · 信息可视化 · 团队项目">
+              <img src="assets/images/data-story-part-2.webp" alt="养老理财主题数据新闻长图下篇">
+              <span class="data-part">PART 02</span>
+            </button>
+            <span class="view-hint">分篇查看完整长图 ↗</span>
+          </div>
+          <div class="project-copy">
+            <p class="project-no">PROJECT 01 · DATA STORY</p>
+            <h3>养老自救<br>通关秘籍</h3>
+            <p>围绕年轻人的长期养老焦虑，将复杂数据、理财逻辑与行动建议组织成一条可阅读、可理解的长图叙事。</p>
+            <ul><li>信息搜集与结构梳理</li><li>数据新闻视觉协作</li><li>答辩与网页传播物料</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-media project-ui">
+            <button class="js-lightbox" type="button" data-src="assets/images/ui-food-1.webp" data-title="惜食口袋 · 功能页" data-caption="小程序 UI 设计">
+              <img src="assets/images/ui-food-1.webp" alt="惜食口袋小程序功能页面设计">
+            </button>
+            <button class="js-lightbox" type="button" data-src="assets/images/ui-food-2.webp" data-title="惜食口袋 · 我的" data-caption="小程序 UI 设计">
+              <img src="assets/images/ui-food-2.webp" alt="惜食口袋小程序个人页面设计">
+            </button>
+            <button class="js-lightbox" type="button" data-src="assets/images/ui-food-home.webp" data-title="惜食口袋 · 首页" data-caption="小程序 UI 设计">
+              <img src="assets/images/ui-food-home.webp" alt="惜食口袋小程序首页设计">
+            </button>
+            <button class="js-lightbox" type="button" data-src="assets/images/ui-food-detail.webp" data-title="惜食口袋 · 详情页" data-caption="小程序 UI 设计">
+              <img src="assets/images/ui-food-detail.webp" alt="惜食口袋小程序详情页设计">
+            </button>
+          </div>
+          <div class="project-copy">
+            <p class="project-no">PROJECT 02 · UI DESIGN</p>
+            <h3>惜食口袋</h3>
+            <p>围绕临期食品与减少浪费设计的小程序界面，建立从首页浏览、商品分类到详情决策的清晰路径。</p>
+            <ul><li>页面结构</li><li>视觉规范</li><li>交互路径</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-media project-hainan">
+            <button class="js-lightbox" type="button" data-src="assets/images/hainan-cover.webp" data-title="海南印象" data-caption="家乡主题网页设计">
+              <img src="assets/images/hainan-cover.webp" alt="海南城市与海岸风景">
+            </button>
+            <button class="js-lightbox" type="button" data-src="assets/images/hainan-sunset.webp" data-title="海南日落" data-caption="家乡主题网页影像素材">
+              <img src="assets/images/hainan-sunset.webp" alt="海南海边日落">
+            </button>
+          </div>
+          <div class="project-copy">
+            <p class="project-no">PROJECT 03 · WEB DESIGN</p>
+            <h3>欢迎来到<br>我的家乡</h3>
+            <p>以海南的人文、风景与美食为线索完成网页课程设计，综合使用 HTML / CSS、图片、音乐与视频组织沉浸式浏览。</p>
+            <ul><li>网页结构</li><li>内容编辑</li><li>多媒体整合</li></ul>
+          </div>
+        </article>
+
+        <article class="project project-wide project-social reveal">
+          <div class="project-copy">
+            <p class="project-no">PROJECT 04 · SOCIAL TOPIC</p>
+            <h3>耗走一队，<br>是一队。</h3>
+            <p>关注宠物殡葬与流浪老犬议题，从项目计划书、受众沟通到招募视觉，把容易被忽视的生命议题转译为更有温度的公共表达。</p>
+            <ul><li>选题与调研</li><li>项目书视觉</li><li>公益传播</li></ul>
+          </div>
+          <div class="project-media project-pets">
+            <button class="js-lightbox" type="button" data-src="assets/images/project-pet.webp" data-title="宠物殡葬项目书" data-caption="项目策划与封面视觉">
+              <img src="assets/images/project-pet.webp" alt="宠物殡葬项目书封面设计">
+            </button>
+            <button class="js-lightbox" type="button" data-src="assets/images/project-dog.webp" data-title="流浪老狗招募" data-caption="公益传播封面视觉">
+              <img src="assets/images/project-dog.webp" alt="流浪老狗志愿者招募封面">
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="spatial-showcase section-pad" id="spatial">
+      <div class="section-label reveal"><span>04</span> SPATIAL PROJECT ROOM</div>
+      <div class="spatial-heading reveal">
+        <h2>走进作品之间，<br>让观看变成一次<i>漫游。</i></h2>
+        <p>滚动页面推动镜头穿过六个创作坐标；移动鼠标会改变空间视角，点击任意画面可进入完整作品与散文描述。</p>
+      </div>
+
+      <div class="spatial-scroll" id="spatialScroll">
+        <div class="spatial-viewport">
+          <div class="spatial-sky" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="spatial-camera" id="spatialCamera">
+            <div class="spatial-core" aria-hidden="true">
+              <span>ARIA</span>
+              <small>CONTENT<br>VISUAL<br>AI</small>
+            </div>
+
+            <button class="spatial-card js-lightbox" type="button" style="--sx:-35%;--sy:-28%;--sz:120px;--sr:-8deg;" data-src="assets/images/hainan-sunset.webp" data-title="故乡的晚霞" data-caption="城市与自然摄影">
+              <img src="assets/images/hainan-sunset.webp" alt="海南粉紫晚霞与城市" loading="lazy">
+              <span><b>01</b> LANDSCAPE</span>
+            </button>
+            <button class="spatial-card js-lightbox" type="button" style="--sx:31%;--sy:-30%;--sz:10px;--sr:7deg;" data-src="assets/images/ui-food-home.webp" data-title="惜食口袋" data-caption="小程序 UI 设计">
+              <img src="assets/images/ui-food-home.webp" alt="惜食口袋小程序界面" loading="lazy">
+              <span><b>02</b> UI DESIGN</span>
+            </button>
+            <button class="spatial-card js-lightbox" type="button" style="--sx:-40%;--sy:23%;--sz:-70px;--sr:5deg;" data-src="assets/images/theatre-stage.webp" data-title="台前一瞬" data-caption="三花剧院摄影专题">
+              <img src="assets/images/theatre-stage.webp" alt="三花剧院戏曲舞台" loading="lazy">
+              <span><b>03</b> THEATRE</span>
+            </button>
+            <button class="spatial-card js-lightbox" type="button" style="--sx:37%;--sy:22%;--sz:90px;--sr:-6deg;" data-src="assets/images/hero-wave.webp" data-title="潮汐之上" data-caption="城市与自然摄影">
+              <img src="assets/images/hero-wave.webp" alt="海浪与礁石" loading="lazy">
+              <span><b>04</b> PHOTOGRAPHY</span>
+            </button>
+            <button class="spatial-card spatial-card-small js-lightbox" type="button" style="--sx:-5%;--sy:-41%;--sz:-180px;--sr:2deg;" data-src="assets/images/design-tea.webp" data-title="茶 · 视觉海报" data-caption="视觉设计">
+              <img src="assets/images/design-tea.webp" alt="茶主题视觉海报" loading="lazy">
+              <span><b>05</b> VISUAL</span>
+            </button>
+            <button class="spatial-card spatial-card-small js-lightbox" type="button" style="--sx:4%;--sy:40%;--sz:180px;--sr:-3deg;" data-src="assets/images/ai-coconut.webp" data-title="椰子幻想" data-caption="AI 概念实验">
+              <img src="assets/images/ai-coconut.webp" alt="椰子与海浪构成的超现实概念作品" loading="lazy">
+              <span><b>06</b> AI CONCEPT</span>
+            </button>
+          </div>
+
+          <div class="spatial-progress" aria-hidden="true"><span></span></div>
+          <p class="spatial-hint">SCROLL TO MOVE THROUGH THE ROOM ↓</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="section-label light reveal"><span>05</span> VISUAL ARCHIVE</div>
+      <div class="gallery-head reveal">
+        <h2>镜头向外，看到城市；<br>镜头向里，<i>看见人间。</i></h2>
+        <p>点击任意作品进入沉浸式查看；支持键盘左右切换与筛选分类。</p>
+      </div>
+      <div class="filters reveal" role="group" aria-label="筛选作品">
+        <button class="filter active" type="button" data-filter="all">全部 <span>46</span></button>
+        <button class="filter" type="button" data-filter="city">城市与自然</button>
+        <button class="filter" type="button" data-filter="human">人文纪实</button>
+        <button class="filter" type="button" data-filter="theatre">三花剧院</button>
+        <button class="filter" type="button" data-filter="design">视觉与静物</button>
+      </div>
+
+      <div class="gallery-grid reveal" id="gallery-grid">
+        <button class="work work-tall js-lightbox" type="button" data-category="city" data-src="assets/images/city-sea-sunset.webp" data-title="海上落日" data-caption="城市与自然"><img src="assets/images/city-sea-sunset.webp" alt="海上落日" loading="lazy"><span>海上落日</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="human" data-src="assets/images/human-teahouse.webp" data-title="茶馆众生" data-caption="人文纪实"><img src="assets/images/human-teahouse.webp" alt="成都茶馆里的人们" loading="lazy"><span>茶馆众生</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/product-necklace.webp" data-title="银色关系" data-caption="产品摄影"><img src="assets/images/product-necklace.webp" alt="银色首饰产品摄影" loading="lazy"><span>银色关系</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-glow.webp" data-title="暮色城市" data-caption="城市与自然"><img src="assets/images/city-glow.webp" alt="暮色里的城市" loading="lazy"><span>暮色城市</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="human" data-src="assets/images/human-notice-board.webp" data-title="被留下的讯息" data-caption="人文纪实"><img src="assets/images/human-notice-board.webp" alt="人们阅读公共告示" loading="lazy"><span>被留下的讯息</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-orange-skyline.webp" data-title="日落刻度" data-caption="城市与自然"><img src="assets/images/city-orange-skyline.webp" alt="橙色日落下的城市天际线" loading="lazy"><span>日落刻度</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="theatre" data-src="assets/images/theatre-stage.webp" data-title="台前一瞬" data-caption="三花剧院专题"><img src="assets/images/theatre-stage.webp" alt="戏曲演员在舞台上" loading="lazy"><span>台前一瞬</span></button>
+        <button class="work js-lightbox" type="button" data-category="human" data-src="assets/images/human-chess.webp" data-title="落子" data-caption="人文纪实"><img src="assets/images/human-chess.webp" alt="街头下棋的人" loading="lazy"><span>落子</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-bridge.webp" data-title="桥与倒影" data-caption="城市与自然"><img src="assets/images/city-bridge.webp" alt="夜晚的桥与水面倒影" loading="lazy"><span>桥与倒影</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="design" data-src="assets/images/still-pottery.webp" data-title="旧器" data-caption="静物观察"><img src="assets/images/still-pottery.webp" alt="木架上的陶器" loading="lazy"><span>旧器</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-blue-hour.webp" data-title="蓝调时刻" data-caption="城市与自然"><img src="assets/images/city-blue-hour.webp" alt="蓝调时刻的城市" loading="lazy"><span>蓝调时刻</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="human" data-src="assets/images/human-ear-cleaning.webp" data-title="手艺人" data-caption="人文纪实"><img src="assets/images/human-ear-cleaning.webp" alt="传统手艺工作场景" loading="lazy"><span>手艺人</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/nature-circle-bird.webp" data-title="圆月与鸟" data-caption="构图观察"><img src="assets/images/nature-circle-bird.webp" alt="圆形背景前的鸟" loading="lazy"><span>圆月与鸟</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="theatre" data-src="assets/images/theatre-mirror.webp" data-title="镜中妆" data-caption="三花剧院专题"><img src="assets/images/theatre-mirror.webp" alt="演员在镜前化妆" loading="lazy"><span>镜中妆</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-window.webp" data-title="一扇晚霞" data-caption="城市与自然"><img src="assets/images/city-window.webp" alt="窗户框住的晚霞" loading="lazy"><span>一扇晚霞</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="theatre" data-src="assets/images/theatre-performance.webp" data-title="戏中人" data-caption="三花剧院专题"><img src="assets/images/theatre-performance.webp" alt="戏曲表演现场" loading="lazy"><span>戏中人</span></button>
+        <button class="work js-lightbox" type="button" data-category="human" data-src="assets/images/human-bell.webp" data-title="集合之前" data-caption="人文纪实"><img src="assets/images/human-bell.webp" alt="人群与黄色铃铛" loading="lazy"><span>集合之前</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-temple.webp" data-title="檐下" data-caption="城市与自然"><img src="assets/images/city-temple.webp" alt="寺庙屋檐与蓝天" loading="lazy"><span>檐下</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="design" data-src="assets/images/design-tea.webp" data-title="茶 · 视觉海报" data-caption="视觉设计"><img src="assets/images/design-tea.webp" alt="茶主题视觉设计" loading="lazy"><span>茶 · 视觉海报</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-ocean-sunrise.webp" data-title="海面初光" data-caption="城市与自然"><img src="assets/images/city-ocean-sunrise.webp" alt="海面日出" loading="lazy"><span>海面初光</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="human" data-src="assets/images/human-artisan.webp" data-title="工作现场" data-caption="人文纪实"><img src="assets/images/human-artisan.webp" alt="工作中的手艺人" loading="lazy"><span>工作现场</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/product-ring-heart.webp" data-title="心形光影" data-caption="产品摄影"><img src="assets/images/product-ring-heart.webp" alt="心形光影中的戒指" loading="lazy"><span>心形光影</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-eaves.webp" data-title="一角飞檐" data-caption="城市与自然"><img src="assets/images/city-eaves.webp" alt="蓝天下的飞檐" loading="lazy"><span>一角飞檐</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="theatre" data-src="assets/images/theatre-costume.webp" data-title="衣冠" data-caption="三花剧院专题"><img src="assets/images/theatre-costume.webp" alt="戏曲服饰特写" loading="lazy"><span>衣冠</span></button>
+        <button class="work js-lightbox" type="button" data-category="human" data-src="assets/images/human-lantern.webp" data-title="百年灯影" data-caption="人文纪实"><img src="assets/images/human-lantern.webp" alt="传统街道里的红灯笼" loading="lazy"><span>百年灯影</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="city" data-src="assets/images/city-street.webp" data-title="归" data-caption="城市与自然"><img src="assets/images/city-street.webp" alt="黑白老街影像" loading="lazy"><span>归</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/still-kettles.webp" data-title="蓝色水壶" data-caption="静物观察"><img src="assets/images/still-kettles.webp" alt="整齐排列的蓝色水壶" loading="lazy"><span>蓝色水壶</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-reflection.webp" data-title="水面暮色" data-caption="城市与自然"><img src="assets/images/city-reflection.webp" alt="晚霞倒映在水面" loading="lazy"><span>水面暮色</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="theatre" data-src="assets/images/theatre-makeup.webp" data-title="开场以前" data-caption="三花剧院专题"><img src="assets/images/theatre-makeup.webp" alt="后台化妆中的演员" loading="lazy"><span>开场以前</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/nature-white-bird.webp" data-title="白鸟" data-caption="自然观察"><img src="assets/images/nature-white-bird.webp" alt="阳光里的白鸟" loading="lazy"><span>白鸟</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="city" data-src="assets/images/hero-wave.webp" data-title="潮汐之上" data-caption="城市与自然"><img src="assets/images/hero-wave.webp" alt="浪花与海边礁石" loading="lazy"><span>潮汐之上</span></button>
+        <button class="work js-lightbox" type="button" data-category="human" data-src="assets/images/human-teaware.webp" data-title="一桌茶事" data-caption="人文纪实"><img src="assets/images/human-teaware.webp" alt="茶桌上的器皿" loading="lazy"><span>一桌茶事</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/design-illustration.webp" data-title="城市插画" data-caption="视觉设计"><img src="assets/images/design-illustration.webp" alt="彩色城市主题插画" loading="lazy"><span>城市插画</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="theatre" data-src="assets/images/theatre-backstage.webp" data-title="后台之间" data-caption="三花剧院专题"><img src="assets/images/theatre-backstage.webp" alt="戏曲演员后台交流" loading="lazy"><span>后台之间</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/nature-boat.webp" data-title="在水上" data-caption="城市与自然"><img src="assets/images/nature-boat.webp" alt="橙色救生衣与小船" loading="lazy"><span>在水上</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/design-poster-blue.webp" data-title="招生海报" data-caption="视觉设计"><img src="assets/images/design-poster-blue.webp" alt="蓝色招生主题海报" loading="lazy"><span>招生海报</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="city" data-src="assets/images/city-cloud-light.webp" data-title="云隙" data-caption="城市与自然"><img src="assets/images/city-cloud-light.webp" alt="云层之间的光" loading="lazy"><span>云隙</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-pink-night.webp" data-title="粉色夜幕" data-caption="城市与自然"><img src="assets/images/city-pink-night.webp" alt="粉色夜空下的城市灯光" loading="lazy"><span>粉色夜幕</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="city" data-src="assets/images/city-silhouette.webp" data-title="城市剪影" data-caption="城市与自然"><img src="assets/images/city-silhouette.webp" alt="暮色中的城市剪影" loading="lazy"><span>城市剪影</span></button>
+        <button class="work js-lightbox" type="button" data-category="city" data-src="assets/images/city-window-view.webp" data-title="窗外入夜" data-caption="城市与自然"><img src="assets/images/city-window-view.webp" alt="从窗外望见的城市夜色" loading="lazy"><span>窗外入夜</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="human" data-src="assets/images/human-reading.webp" data-title="读一张告示" data-caption="人文纪实"><img src="assets/images/human-reading.webp" alt="男人在告示墙前阅读" loading="lazy"><span>读一张告示</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/nature-night-bird.webp" data-title="夜鸟" data-caption="自然观察"><img src="assets/images/nature-night-bird.webp" alt="蓝色夜幕下的鸟" loading="lazy"><span>夜鸟</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/nature-pigeon.webp" data-title="光里的白鸽" data-caption="自然观察"><img src="assets/images/nature-pigeon.webp" alt="光影中的白鸽" loading="lazy"><span>光里的白鸽</span></button>
+        <button class="work work-tall js-lightbox" type="button" data-category="design" data-src="assets/images/nature-sculpture.webp" data-title="石刻光影" data-caption="构图观察"><img src="assets/images/nature-sculpture.webp" alt="石刻雕塑的光影细节" loading="lazy"><span>石刻光影</span></button>
+        <button class="work js-lightbox" type="button" data-category="design" data-src="assets/images/product-ring-screen.webp" data-title="屏幕之外" data-caption="产品摄影"><img src="assets/images/product-ring-screen.webp" alt="戒指与屏幕光影产品摄影" loading="lazy"><span>屏幕之外</span></button>
+        <button class="work work-wide js-lightbox" type="button" data-category="design" data-src="assets/images/design-poster-campus.webp" data-title="校园招新海报" data-caption="视觉设计"><img src="assets/images/design-poster-campus.webp" alt="校园组织招新海报" loading="lazy"><span>校园招新海报</span></button>
+      </div>
+    </section>
+
+    <section class="experience section-pad" id="experience">
+      <div class="section-label reveal"><span>06</span> EXPERIENCE &amp; SKILLS</div>
+      <div class="experience-grid">
+        <div class="experience-heading reveal"><h2>把好奇心带进现场，<br>把执行力留在结果里。</h2></div>
+        <div class="timeline reveal">
+          <article><time>2025.02 — 2026.03</time><div><h3>Hollister · 品牌代表实习生</h3><p>顾客沟通、商品推荐、陈列与门店运营；获 2025 年 10 月 IFS 门店 MVP。</p></div></article>
+          <article><time>2024.08 — 2025.02</time><div><h3>Abercrombie &amp; Fitch · 品牌代表实习生</h3><p>销售服务、后台事务、上新与卖场视觉支持，理解品牌一线经营逻辑。</p></div></article>
+          <article><time>2024.07 — 2024.08</time><div><h3>中国工商银行海南省分行营业部 · 实习</h3><p>客户资料与金融资讯整理，协助处理文书材料与日常事务。</p></div></article>
+          <article><time>2024.04 — 2024.06</time><div><h3>大学生创新创业大赛 · 项目队员</h3><p>问卷设计、数据统计、商业模式资料收集与项目风险梳理。</p></div></article>
+        </div>
+      </div>
+
+      <div class="skill-grid reveal">
+        <article><span>01</span><h3>内容与运营</h3><p>文案撰写、采访写作、选题策划、活动记录、账号运营与发布。</p></article>
+        <article><span>02</span><h3>视觉与影像</h3><p>摄影、Photoshop、CDR、PR、剪映与基础页面设计。</p></article>
+        <article><span>03</span><h3>办公与数据</h3><p>Word、Excel、SPSS 基础；资料整理、数据统计与结果归纳。</p></article>
+        <article><span>04</span><h3>AI 与原型</h3><p>ChatGPT、Claude 辅助研究、提炼、文案迭代与快速网页原型。</p></article>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="contact-top reveal">
+        <p class="section-label"><span>07</span> LET'S CREATE</p>
+        <h2>有一个值得被看见的想法？<br><i>我们一起让它发生。</i></h2>
+      </div>
+      <div class="contact-bottom reveal">
+        <a class="contact-email" href="mailto:1722286746@qq.com">1722286746@qq.com <span>↗</span></a>
+        <div><a href="tel:15595811114">155 9581 1114</a><span>成都 / 深圳 / 广州 / 上海</span></div>
+      </div>
+      <footer><span>© <span id="year">2026</span> ARIA ZHANG</span><span>CONTENT · VISUAL · AI</span><a href="#top">BACK TO TOP ↑</a></footer>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="作品查看器">
+    <button class="lightbox-close" type="button" aria-label="关闭">×</button>
+    <button class="lightbox-arrow lightbox-prev" type="button" aria-label="上一张">←</button>
+    <figure><img src="" alt=""><figcaption><b></b><span></span></figcaption></figure>
+    <button class="lightbox-arrow lightbox-next" type="button" aria-label="下一张">→</button>
+    <span class="lightbox-count" aria-live="polite"></span>
+  </dialog>
+
+  <dialog class="resume-modal" id="resume-modal" aria-label="张译尹简历">
+    <header><div><b>张译尹 / ARIA</b><span>中英文简历</span></div><button type="button" class="resume-close" aria-label="关闭">×</button></header>
+    <div class="resume-tabs" role="tablist"><button class="active" type="button" data-resume="cn">中文</button><button type="button" data-resume="en">English</button></div>
+    <img src="assets/images/resume-cn.webp" alt="张译尹中文简历">
+  </dialog>
+
+  <script src="three-scene.bundle.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
