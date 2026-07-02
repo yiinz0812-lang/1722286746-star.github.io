@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://yiinz0812-lang.github.io/1722286746-star.github.io/sitemap.xml
